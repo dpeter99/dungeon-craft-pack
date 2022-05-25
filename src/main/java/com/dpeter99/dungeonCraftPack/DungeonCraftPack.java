@@ -5,10 +5,12 @@ import net.minecraftforge.fml.common.Mod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod("dungeon_craft_pack")
+import static com.dpeter99.dungeonCraftPack.DungeonCraftPack.MODID;
+
+@Mod(MODID)
 public class DungeonCraftPack {
 
-    public static final String MODID = "dungeon-craft-pack";
+    public static final String MODID = "dungeon_craft_pack";
 
     public static final Logger LOGGER = LogManager.getLogger();
 
