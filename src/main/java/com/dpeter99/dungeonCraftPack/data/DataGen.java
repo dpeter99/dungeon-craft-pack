@@ -1,6 +1,7 @@
 package com.dpeter99.dungeonCraftPack.data;
 
 import com.dpeter99.dungeonCraftPack.DungeonCraftPack;
+import com.dpeter99.dungeonCraftPack.data.item.ItemModelProviders;
 import com.dpeter99.dungeonCraftPack.data.recipe.RecipeProviders;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
@@ -37,7 +38,7 @@ public class DataGen {
         if(event.includeClient()){
             LOGGER.info(DATAGEN, "Adding data providers for client assets");
             //generator.addProvider(new BlockModelProviders(generator, event.getExistingFileHelper()));
-            //generator.addProvider(new ItemModelProviders(generator, event.getExistingFileHelper()));
+            generator.addProvider(new ItemModelProviders(generator, event.getExistingFileHelper()));
             //generator.addProvider(new EnUsLangProvider(generator));
             //generator.addProvider(new BlockStateProvider(generator, event.getExistingFileHelper()));
         }
